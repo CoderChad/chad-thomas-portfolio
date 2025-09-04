@@ -73,61 +73,6 @@ const Projects: React.FC = () => {
       metricValue: '94%',
       link: 'https://github.com/CoderChad/genomic-ocr-bioinformatics',
       category: 'Bioinformatics'
-    },
-    {
-      id: 6,
-      title: 'Object Detection System',
-      description: 'Real-time object detection and classification system using YOLO and custom CNN architectures for various applications.',
-      image: '/projects/object-detection.jpg',
-      technologies: ['Python', 'YOLO', 'OpenCV', 'Computer Vision', 'Real-time Processing'],
-      metric: 'Detection Speed',
-      metricValue: '30 FPS',
-      link: 'https://github.com/CoderChad/object-detection',
-      category: 'Computer Vision'
-    },
-    {
-      id: 7,
-      title: 'Recommendation Engine',
-      description: 'Advanced recommendation system using collaborative filtering, content-based filtering, and deep learning approaches.',
-      image: '/projects/recommendation-engine.jpg',
-      technologies: ['Python', 'Machine Learning', 'Collaborative Filtering', 'Deep Learning', 'Recommendation Systems'],
-      metric: 'Precision',
-      metricValue: '87%',
-      link: 'https://github.com/CoderChad/recommendation-engine',
-      category: 'ML Systems'
-    },
-    {
-      id: 8,
-      title: 'Sentiment Analysis API',
-      description: 'RESTful API for sentiment analysis using transformer models and natural language processing techniques.',
-      image: '/projects/sentiment-api.jpg',
-      technologies: ['Python', 'FastAPI', 'Transformers', 'NLP', 'API Development'],
-      metric: 'Accuracy',
-      metricValue: '91%',
-      link: 'https://github.com/CoderChad/sentiment-analysis-api',
-      category: 'NLP & APIs'
-    },
-    {
-      id: 9,
-      title: 'Spotify Music Classification',
-      description: 'Machine learning model to classify music genres and predict user preferences using audio features and collaborative filtering.',
-      image: '/images/spotify.png',
-      technologies: ['Python', 'Machine Learning', 'Audio Processing', 'Recommendation Systems'],
-      metric: 'Accuracy',
-      metricValue: '88%',
-      link: 'https://github.com/CoderChad/spotify-classification',
-      category: 'Music AI'
-    },
-    {
-      id: 10,
-      title: 'Pryima Intelligence Platform',
-      description: 'Comprehensive health intelligence platform unifying genetics, dynamic labs, microbiome, CGM, and wearables into a single health OS.',
-      image: '/images/pryima-intelligence.png',
-      technologies: ['Python', 'Health Tech', 'Data Integration', 'Machine Learning', 'Bioinformatics'],
-      metric: 'Data Integration',
-      metricValue: '95%',
-      link: 'https://pryima.com',
-      category: 'Health Tech'
     }
   ];
 
