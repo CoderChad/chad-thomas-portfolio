@@ -23,7 +23,7 @@ const Projects: React.FC = () => {
       id: 1,
       title: 'Breast Cancer Detection',
       description: 'A deep learning framework for breast cancer detection using mammography images with CNNs, transformers, and federated learning.',
-      image: '/projects/breast-cancer-detection.png',
+      image: '/images/breast.png',
       technologies: ['Python', 'TensorFlow', 'CNN', 'Deep Learning', 'Medical Imaging'],
       metric: 'Accuracy',
       metricValue: '92%',
@@ -34,7 +34,7 @@ const Projects: React.FC = () => {
       id: 2,
       title: 'Apple Watch Sleep Score',
       description: 'Machine learning model to classify sleep stages using heart rate and acceleration data from Apple Watch wearables.',
-      image: '/projects/apple-watch-sleep.png',
+      image: '/images/watch.png',
       technologies: ['Python', 'Machine Learning', 'Time Series', 'Wearables'],
       metric: 'Classification Accuracy',
       metricValue: '89%',
@@ -45,7 +45,7 @@ const Projects: React.FC = () => {
       id: 3,
       title: 'Pneumonia Classification',
       description: 'Convolutional neural network to detect pneumonia from chest X-ray images with high accuracy for medical diagnosis.',
-      image: '/projects/pneumonia-classification.png',
+      image: '/images/pnuemonia.png',
       technologies: ['Python', 'Deep Learning', 'Medical Imaging', 'CNN'],
       metric: 'Accuracy',
       metricValue: '95%',
@@ -56,7 +56,7 @@ const Projects: React.FC = () => {
       id: 4,
       title: 'Histopathology Cancer Detection',
       description: 'Advanced CNN-based system for detecting metastatic cancer in lymph node sections from breast cancer patients with ~98% accuracy using ResNet, DenseNet, and EfficientNet architectures on histopathology images.',
-      image: '/projects/histopathology-cancer-detection.png',
+      image: '/images/h.png',
       technologies: ['Python', 'CNN', 'Deep Learning', 'Medical Imaging', 'ResNet', 'DenseNet', 'EfficientNet'],
       metric: 'Accuracy',
       metricValue: '98%',
@@ -67,7 +67,7 @@ const Projects: React.FC = () => {
       id: 5,
       title: 'Genomic OCR Bioinformatics',
       description: 'Using natural language processing and optical character recognition techniques to analyze genomic data for bioinformatics research.',
-      image: '/projects/genomic-ocr-bioinformatics.png',
+      image: '/images/ocr.png',
       technologies: ['Python', 'Bioinformatics', 'NLP', 'OCR', 'Genomics'],
       metric: 'Processing Accuracy',
       metricValue: '94%',
@@ -106,6 +106,28 @@ const Projects: React.FC = () => {
       metricValue: '91%',
       link: 'https://github.com/CoderChad/sentiment-analysis-api',
       category: 'NLP & APIs'
+    },
+    {
+      id: 9,
+      title: 'Spotify Music Classification',
+      description: 'Machine learning model to classify music genres and predict user preferences using audio features and collaborative filtering.',
+      image: '/images/spotify.png',
+      technologies: ['Python', 'Machine Learning', 'Audio Processing', 'Recommendation Systems'],
+      metric: 'Accuracy',
+      metricValue: '88%',
+      link: 'https://github.com/CoderChad/spotify-classification',
+      category: 'Music AI'
+    },
+    {
+      id: 10,
+      title: 'Pryima Intelligence Platform',
+      description: 'Comprehensive health intelligence platform unifying genetics, dynamic labs, microbiome, CGM, and wearables into a single health OS.',
+      image: '/images/pryima-intelligence.png',
+      technologies: ['Python', 'Health Tech', 'Data Integration', 'Machine Learning', 'Bioinformatics'],
+      metric: 'Data Integration',
+      metricValue: '95%',
+      link: 'https://pryima.com',
+      category: 'Health Tech'
     }
   ];
 
