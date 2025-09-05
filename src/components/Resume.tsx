@@ -149,52 +149,68 @@ const Resume: React.FC = () => {
           <h3 className="text-2xl font-semibold text-gray-300 mb-8">
             Trusted by Leading Organizations
           </h3>
-          <div className="flex flex-wrap justify-center items-center gap-6 opacity-80 hover:opacity-100 transition-opacity duration-300">
-            <div className="flex items-center justify-center h-16 w-36">
+          <div className="flex flex-wrap justify-center items-center gap-8 opacity-90 hover:opacity-100 transition-opacity duration-300">
+            <div className="flex items-center justify-center h-20 w-40 bg-white/5 rounded-lg p-4">
               <img
                 src="/Company%20Logos/Bank-of-America-Logo.png"
                 alt="Bank of America"
-                className="h-12 w-auto object-contain filter brightness-0 invert"
+                className="max-h-12 max-w-full object-contain"
                 onError={(e) => {
-                  console.error('Bank of America logo failed to load:', e);
+                  console.error('Bank of America logo failed to load');
                   const target = e.target as HTMLImageElement;
-                  target.src = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQ0IiBoZWlnaHQ9IjQ4IiB2aWV3Qm94PSIwIDAgMTQ0IDQ4IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxyZWN0IHdpZHRoPSIxNDQiIGhlaWdodD0iNDgiIGZpbGw9IiNmZmYiLz48dGV4dCB4PSI3MiIgeT0iMzAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZmlsbD0iIzAwMCIgdGV4dC1hbmNob3I9Im1pZGRsZSI+QmFuayBvZiBBbWVyaWNhPC90ZXh0Pjwvc3ZnPg==';
+                  target.style.display = 'none';
+                  const parent = target.parentElement;
+                  if (parent) {
+                    parent.innerHTML = '<span class="text-white font-semibold">Bank of America</span>';
+                  }
                 }}
               />
             </div>
-            <div className="flex items-center justify-center h-16 w-36">
+            <div className="flex items-center justify-center h-20 w-40 bg-white/5 rounded-lg p-4">
               <img
                 src="/Company%20Logos/Blackstone-Logo.png"
                 alt="Blackstone"
-                className="h-12 w-auto object-contain filter brightness-0 invert"
+                className="max-h-12 max-w-full object-contain"
                 onError={(e) => {
-                  console.error('Blackstone logo failed to load:', e);
+                  console.error('Blackstone logo failed to load');
                   const target = e.target as HTMLImageElement;
-                  target.src = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQ0IiBoZWlnaHQ9IjQ4IiB2aWV3Qm94PSIwIDAgMTQ0IDQ4IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxyZWN0IHdpZHRoPSIxNDQiIGhlaWdodD0iNDgiIGZpbGw9IiNmZmYiLz48dGV4dCB4PSI3MiIgeT0iMzAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZmlsbD0iIzAwMCIgdGV4dC1hbmNob3I9Im1pZGRsZSI+QmxhY2tzdG9uZTwvdGV4dD48L3N2Zz4=';
+                  target.style.display = 'none';
+                  const parent = target.parentElement;
+                  if (parent) {
+                    parent.innerHTML = '<span class="text-white font-semibold">Blackstone</span>';
+                  }
                 }}
               />
             </div>
-            <div className="flex items-center justify-center h-16 w-36">
+            <div className="flex items-center justify-center h-20 w-40 bg-white/5 rounded-lg p-4">
               <img
                 src="/Company%20Logos/Chase.png"
                 alt="Chase"
-                className="h-12 w-auto object-contain filter brightness-0 invert"
+                className="max-h-12 max-w-full object-contain"
                 onError={(e) => {
-                  console.error('Chase logo failed to load:', e);
+                  console.error('Chase logo failed to load');
                   const target = e.target as HTMLImageElement;
-                  target.src = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQ0IiBoZWlnaHQ9IjQ4IiB2aWV3Qm94PSIwIDAgMTQ0IDQ4IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxyZWN0IHdpZHRoPSIxNDQiIGhlaWdodD0iNDgiIGZpbGw9IiNmZmYiLz48dGV4dCB4PSI3MiIgeT0iMzAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZmlsbD0iIzAwMCIgdGV4dC1hbmNob3I9Im1pZGRsZSI+Q2hhc2U8L3RleHQ+PC9zdmc+';
+                  target.style.display = 'none';
+                  const parent = target.parentElement;
+                  if (parent) {
+                    parent.innerHTML = '<span class="text-white font-semibold">Chase</span>';
+                  }
                 }}
               />
             </div>
-            <div className="flex items-center justify-center h-16 w-36">
+            <div className="flex items-center justify-center h-20 w-40 bg-white/5 rounded-lg p-4">
               <img
                 src="/Company%20Logos/Font-Goldman-Sachs-Logo.jpg"
                 alt="Goldman Sachs"
-                className="h-12 w-auto object-contain filter brightness-0 invert"
+                className="max-h-12 max-w-full object-contain"
                 onError={(e) => {
-                  console.error('Goldman Sachs logo failed to load:', e);
+                  console.error('Goldman Sachs logo failed to load');
                   const target = e.target as HTMLImageElement;
-                  target.src = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQ0IiBoZWlnaHQ9IjQwIiB2aWV3Qm94PSIwIDAgMTQ0IDQwIiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxyZWN0IHdpZHRoPSIxNDQiIGhlaWdodD0iNDAiIGZpbGw9IiNmZmYiLz48dGV4dCB4PSI3MiIgeT0iMjUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZmlsbD0iIzAwMCIgdGV4dC1hbmNob3I9Im1pZGRsZSI+R29sZG1hbiBTYWNocyA8L3RleHQ+PC9zdmc+';
+                  target.style.display = 'none';
+                  const parent = target.parentElement;
+                  if (parent) {
+                    parent.innerHTML = '<span class="text-white font-semibold">Goldman Sachs</span>';
+                  }
                 }}
               />
             </div>
