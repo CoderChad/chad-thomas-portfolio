@@ -49,7 +49,7 @@ const Research: React.FC = () => {
         '/research%20papers/Pryima%20Intelligence%20II/Pryima%20Intelligence%20II%20(no%20diagram)-5.png',
         '/research%20papers/Pryima%20Intelligence%20II/Pryima%20Intelligence%20II%20(no%20diagram)-6.png'
       ],
-      downloadUrl: '/research%20papers/Pryima%20Intelligence%20II/Pryima%20Intelligence%20II.pdf'
+      downloadUrl: '/research%20papers/Pryima%20Intelligence%20II/Pryima%20Intelligence%20II%20(no%20diagram)-1.png'
     },
     {
       id: 3,
