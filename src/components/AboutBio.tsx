@@ -46,6 +46,37 @@ const AboutBio: React.FC = () => {
           </div>
         </div>
       </div>
+
+      {/* Education Section */}
+      <div className="mt-8">
+        <h2 className="text-lg font-semibold text-white mb-4">Education</h2>
+        <div className="flex flex-wrap items-center gap-6 opacity-80 hover:opacity-100 transition-opacity duration-300">
+          <div className="flex items-center space-x-3">
+            <img
+              src="/Education/NYU-Logo.png"
+              alt="New York University"
+              className="h-8 w-auto object-contain filter brightness-0 invert"
+              onError={(e) => {
+                const target = e.target as HTMLImageElement;
+                target.style.display = 'none';
+              }}
+            />
+            <span className="text-gray-300 text-sm">New York University</span>
+          </div>
+          <div className="flex items-center space-x-3">
+            <img
+              src="/Education/Stanford-Emblem.png"
+              alt="Stanford University"
+              className="h-8 w-auto object-contain filter brightness-0 invert"
+              onError={(e) => {
+                const target = e.target as HTMLImageElement;
+                target.style.display = 'none';
+              }}
+            />
+            <span className="text-gray-300 text-sm">Stanford University</span>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
