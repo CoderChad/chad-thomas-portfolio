@@ -152,7 +152,7 @@ const Resume: React.FC = () => {
           <div className="flex flex-wrap justify-center items-center gap-8 opacity-60 hover:opacity-80 transition-opacity duration-300">
             <div className="flex items-center justify-center h-12 w-32">
               <img
-                src="/Company Logos/Bank-of-America-Logo.png"
+                src="/Company%20Logos/Bank-of-America-Logo.png"
                 alt="Bank of America"
                 className="h-8 w-auto object-contain filter brightness-0 invert"
                 onError={(e) => {
@@ -163,7 +163,7 @@ const Resume: React.FC = () => {
             </div>
             <div className="flex items-center justify-center h-12 w-32">
               <img
-                src="/Company Logos/Blackstone-Logo.png"
+                src="/Company%20Logos/Blackstone-Logo.png"
                 alt="Blackstone"
                 className="h-8 w-auto object-contain filter brightness-0 invert"
                 onError={(e) => {
@@ -174,7 +174,7 @@ const Resume: React.FC = () => {
             </div>
             <div className="flex items-center justify-center h-12 w-32">
               <img
-                src="/Company Logos/Font-Goldman-Sachs-Logo.jpg"
+                src="/Company%20Logos/Font-Goldman-Sachs-Logo.jpg"
                 alt="Goldman Sachs"
                 className="h-8 w-auto object-contain filter brightness-0 invert"
                 onError={(e) => {

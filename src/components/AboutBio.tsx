@@ -58,7 +58,7 @@ const AboutBio: React.FC = () => {
               className="h-8 w-auto object-contain filter brightness-0 invert"
               onError={(e) => {
                 const target = e.target as HTMLImageElement;
-                target.style.display = 'none';
+                               target.style.display = 'none';
               }}
             />
             <span className="text-gray-300 text-sm">New York University</span>
