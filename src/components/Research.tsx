@@ -33,6 +33,22 @@ const Research: React.FC = () => {
         '/Pryima Intelligence-7.png'
       ],
       downloadUrl: '/Pryima Intelligence.pdf'
+    },
+    {
+      id: 2,
+      title: 'Pryima Intelligence II',
+      type: 'research-paper',
+      description: 'Advanced 6-page research paper on Pryima Intelligence II, delving deeper into cutting-edge AI applications, health data integration, and innovative bioinformatics solutions.',
+      image: '/research papers/Pryima Intelligence II/Pryima Intelligence II (no diagram)-1.png',
+      pages: [
+        '/research papers/Pryima Intelligence II/Pryima Intelligence II (no diagram)-1.png',
+        '/research papers/Pryima Intelligence II/Pryima Intelligence II (no diagram)-2.png',
+        '/research papers/Pryima Intelligence II/Pryima Intelligence II (no diagram)-3.png',
+        '/research papers/Pryima Intelligence II/Pryima Intelligence II (no diagram)-4.png',
+        '/research papers/Pryima Intelligence II/Pryima Intelligence II (no diagram)-5.png',
+        '/research papers/Pryima Intelligence II/Pryima Intelligence II (no diagram)-6.png'
+      ],
+      downloadUrl: '/research papers/Pryima Intelligence II/Pryima Intelligence II.pdf'
     }
   ];
 
@@ -68,7 +84,7 @@ const Research: React.FC = () => {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-1 gap-8 max-w-4xl mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
           {researchDocuments.map((doc, index) => (
             <motion.div
               key={doc.id}
