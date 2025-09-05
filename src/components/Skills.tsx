@@ -68,7 +68,7 @@ const Skills: React.FC = () => {
         },
         {
           name: 'ONNX',
-          icon: '/icons/onnx.svg',
+          icon: '/icons/onnxai-ar21.svg',
           level: 88,
           description: 'Open Neural Network Exchange for model interoperability and optimization'
         },
