@@ -49,9 +49,13 @@ const About: React.FC = () => {
   return (
     <section id="about" className="min-h-screen bg-gray-900 py-20">
       <div className="max-w-3xl mx-auto px-4">
-        <h1 className="text-3xl md:text-4xl font-bold tracking-tight text-white mb-8">
+        <h1 className="text-3xl md:text-4xl font-bold tracking-tight text-white mb-4">
           About Chad Thomas
         </h1>
+        
+        <p className="text-xl text-gray-300 italic mb-8">
+          Architect. Orchestrator. Researcher. Deployer.
+        </p>
         
         <AboutBio />
         
