@@ -39,16 +39,16 @@ const Research: React.FC = () => {
       title: 'Pryima Intelligence II',
       type: 'research-paper',
       description: 'Advanced 6-page research paper on Pryima Intelligence II, delving deeper into cutting-edge AI applications, health data integration, and innovative bioinformatics solutions.',
-      image: '/research papers/Pryima Intelligence II/Pryima Intelligence II (no diagram)-1.png',
+      image: '/research%20papers/Pryima%20Intelligence%20II/Pryima%20Intelligence%20II%20(no%20diagram)-1.png',
       pages: [
-        '/research papers/Pryima Intelligence II/Pryima Intelligence II (no diagram)-1.png',
-        '/research papers/Pryima Intelligence II/Pryima Intelligence II (no diagram)-2.png',
-        '/research papers/Pryima Intelligence II/Pryima Intelligence II (no diagram)-3.png',
-        '/research papers/Pryima Intelligence II/Pryima Intelligence II (no diagram)-4.png',
-        '/research papers/Pryima Intelligence II/Pryima Intelligence II (no diagram)-5.png',
-        '/research papers/Pryima Intelligence II/Pryima Intelligence II (no diagram)-6.png'
+        '/research%20papers/Pryima%20Intelligence%20II/Pryima%20Intelligence%20II%20(no%20diagram)-1.png',
+        '/research%20papers/Pryima%20Intelligence%20II/Pryima%20Intelligence%20II%20(no%20diagram)-2.png',
+        '/research%20papers/Pryima%20Intelligence%20II/Pryima%20Intelligence%20II%20(no%20diagram)-3.png',
+        '/research%20papers/Pryima%20Intelligence%20II/Pryima%20Intelligence%20II%20(no%20diagram)-4.png',
+        '/research%20papers/Pryima%20Intelligence%20II/Pryima%20Intelligence%20II%20(no%20diagram)-5.png',
+        '/research%20papers/Pryima%20Intelligence%20II/Pryima%20Intelligence%20II%20(no%20diagram)-6.png'
       ],
-      downloadUrl: '/research papers/Pryima Intelligence II/Pryima Intelligence II.pdf'
+      downloadUrl: '/research%20papers/Pryima%20Intelligence%20II/Pryima%20Intelligence%20II.pdf'
     }
   ];
 
