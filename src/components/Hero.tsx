@@ -253,14 +253,6 @@ const Hero: React.FC = () => {
         </motion.p>
 
         {/* Location */}
-        <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.5 }}
-          className="text-lg text-gray-400 mb-8 font-medium"
-        >
-          Available for remote work worldwide → Austin, TX
-        </motion.p>
 
         {/* Description */}
         <motion.p
