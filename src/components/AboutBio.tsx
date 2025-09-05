@@ -12,11 +12,11 @@ const AboutBio: React.FC = () => {
         </p>
         
         <p>
-          Chad's track record: <strong className="text-white">data ingestion at scale</strong>, schema-wise <strong className="text-white">feature engineering</strong>, <strong className="text-white">RAG with guardrails</strong> (PII redaction, injection filters, domain allowlists), <strong className="text-white">evaluation harnesses</strong> for grounding/latency/CTR, and crisp front-ends that make complex models legible.
+          <strong className="text-white">Founder DNA.</strong> Chad built Pryima because he strongly believes that health shouldn't be a maze. He operates with the understanding that if a person owns a smartphone, they should have an intelligent coach that turns genetics, labs, and wearables into one clear daily decision. He is actively designing for the <strong className="text-white">Austin 5 → 500 → global arc</strong>—proving outcomes with small, measurable slices, then scaling access so anyone, anywhere, can improve their health with the phone in their hand.
         </p>
         
         <p>
-          He builds small, measurable slices, proves lift with metrics, and iterates quickly—favoring <strong className="text-white">determinism, testability, and safety</strong> over hype. He works best with teams that want the science right and the product shipped.
+          Chad's track record: <strong className="text-white">data ingestion at scale</strong>, schema-wise <strong className="text-white">feature engineering</strong>, <strong className="text-white">RAG with guardrails</strong> (PII redaction, injection filters, domain allowlists), <strong className="text-white">evaluation harnesses</strong> for grounding/latency/CTR, and crisp front-ends that make complex models legible. He builds small, measurable slices, proves lift with metrics, and iterates quickly—favoring <strong className="text-white">determinism, testability, and safety</strong> over hype. He works best with teams that want the science right and the product shipped.
         </p>
       </div>
 
