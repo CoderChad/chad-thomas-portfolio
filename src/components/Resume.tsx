@@ -149,40 +149,52 @@ const Resume: React.FC = () => {
           <h3 className="text-2xl font-semibold text-gray-300 mb-8">
             Trusted by Leading Organizations
           </h3>
-          <div className="flex flex-wrap justify-center items-center gap-8 opacity-70 hover:opacity-90 transition-opacity duration-300">
-            <div className="flex items-center justify-center h-16 w-40 bg-white/10 rounded-lg p-3">
+          <div className="flex flex-wrap justify-center items-center gap-6 opacity-80 hover:opacity-100 transition-opacity duration-300">
+            <div className="flex items-center justify-center h-16 w-36">
               <img
                 src="/Company%20Logos/Bank-of-America-Logo.png"
                 alt="Bank of America"
-                className="h-10 w-auto object-contain"
+                className="h-12 w-auto object-contain filter brightness-0 invert"
                 onError={(e) => {
                   console.error('Bank of America logo failed to load:', e);
                   const target = e.target as HTMLImageElement;
-                  target.src = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjQwIiB2aWV3Qm94PSIwIDAgMTAwIDQwIiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxyZWN0IHdpZHRoPSIxMDAiIGhlaWdodD0iNDAiIGZpbGw9IiNmZmYiLz48dGV4dCB4PSI1MCIgeT0iMjUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMiIgZmlsbD0iIzAwMCIgdGV4dC1hbmNob3I9Im1pZGRsZSI+QmFuayBvZiBBbWVyaWNhPC90ZXh0Pjwvc3ZnPg==';
+                  target.src = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQ0IiBoZWlnaHQ9IjQ4IiB2aWV3Qm94PSIwIDAgMTQ0IDQ4IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxyZWN0IHdpZHRoPSIxNDQiIGhlaWdodD0iNDgiIGZpbGw9IiNmZmYiLz48dGV4dCB4PSI3MiIgeT0iMzAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZmlsbD0iIzAwMCIgdGV4dC1hbmNob3I9Im1pZGRsZSI+QmFuayBvZiBBbWVyaWNhPC90ZXh0Pjwvc3ZnPg==';
                 }}
               />
             </div>
-            <div className="flex items-center justify-center h-16 w-40 bg-white/10 rounded-lg p-3">
+            <div className="flex items-center justify-center h-16 w-36">
               <img
                 src="/Company%20Logos/Blackstone-Logo.png"
                 alt="Blackstone"
-                className="h-10 w-auto object-contain"
+                className="h-12 w-auto object-contain filter brightness-0 invert"
                 onError={(e) => {
                   console.error('Blackstone logo failed to load:', e);
                   const target = e.target as HTMLImageElement;
-                  target.src = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjQwIiB2aWV3Qm94PSIwIDAgMTAwIDQwIiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxyZWN0IHdpZHRoPSIxMDAiIGhlaWdodD0iNDAiIGZpbGw9IiNmZmYiLz48dGV4dCB4PSI1MCIgeT0iMjUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMiIgZmlsbD0iIzAwMCIgdGV4dC1hbmNob3I9Im1pZGRsZSI+QmxhY2tzdG9uZTwvdGV4dD48L3N2Zz4=';
+                  target.src = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQ0IiBoZWlnaHQ9IjQ4IiB2aWV3Qm94PSIwIDAgMTQ0IDQ4IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxyZWN0IHdpZHRoPSIxNDQiIGhlaWdodD0iNDgiIGZpbGw9IiNmZmYiLz48dGV4dCB4PSI3MiIgeT0iMzAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZmlsbD0iIzAwMCIgdGV4dC1hbmNob3I9Im1pZGRsZSI+QmxhY2tzdG9uZTwvdGV4dD48L3N2Zz4=';
                 }}
               />
             </div>
-            <div className="flex items-center justify-center h-16 w-40 bg-white/10 rounded-lg p-3">
+            <div className="flex items-center justify-center h-16 w-36">
+              <img
+                src="/Company%20Logos/Chase.png"
+                alt="Chase"
+                className="h-12 w-auto object-contain filter brightness-0 invert"
+                onError={(e) => {
+                  console.error('Chase logo failed to load:', e);
+                  const target = e.target as HTMLImageElement;
+                  target.src = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQ0IiBoZWlnaHQ9IjQ4IiB2aWV3Qm94PSIwIDAgMTQ0IDQ4IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxyZWN0IHdpZHRoPSIxNDQiIGhlaWdodD0iNDgiIGZpbGw9IiNmZmYiLz48dGV4dCB4PSI3MiIgeT0iMzAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZmlsbD0iIzAwMCIgdGV4dC1hbmNob3I9Im1pZGRsZSI+Q2hhc2U8L3RleHQ+PC9zdmc+';
+                }}
+              />
+            </div>
+            <div className="flex items-center justify-center h-16 w-36">
               <img
                 src="/Company%20Logos/Font-Goldman-Sachs-Logo.jpg"
                 alt="Goldman Sachs"
-                className="h-10 w-auto object-contain"
+                className="h-12 w-auto object-contain filter brightness-0 invert"
                 onError={(e) => {
                   console.error('Goldman Sachs logo failed to load:', e);
                   const target = e.target as HTMLImageElement;
-                  target.src = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjQwIiB2aWV3Qm94PSIwIDAgMTAwIDQwIiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxyZWN0IHdpZHRoPSIxMDAiIGhlaWdodD0iNDAiIGZpbGw9IiNmZmYiLz48dGV4dCB4PSI1MCIgeT0iMjUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMiIgZmlsbD0iIzAwMCIgdGV4dC1hbmNob3I9Im1pZGRsZSI+R29sZG1hbiBTYWNocyA8L3RleHQ+PC9zdmc+';
+                  target.src = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQ0IiBoZWlnaHQ9IjQwIiB2aWV3Qm94PSIwIDAgMTQ0IDQwIiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxyZWN0IHdpZHRoPSIxNDQiIGhlaWdodD0iNDAiIGZpbGw9IiNmZmYiLz48dGV4dCB4PSI3MiIgeT0iMjUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZmlsbD0iIzAwMCIgdGV4dC1hbmNob3I9Im1pZGRsZSI+R29sZG1hbiBTYWNocyA8L3RleHQ+PC9zdmc+';
                 }}
               />
             </div>
