@@ -21,7 +21,7 @@ const Research: React.FC = () => {
       id: 1,
       title: 'Pryima Intelligence',
       type: 'research-paper',
-      description: 'Comprehensive 7-page research paper on Pryima Intelligence, exploring advanced AI methodologies and their applications in health technology and bioinformatics.',
+      description: 'Executive research paper discussing Pryima\'s next level Intelligence integration, exploring advanced AI methodologies and their applications in health technology and bioinformatics. We argue that vanilla Transformer LLMs—while fluent—are structurally insufficient for regulated, high-stakes healthcare and propose a post-Transformer systems blueprint that blends neuro-symbolic reasoning, causal world models, typed tool use, and safety-by-construction governance to achieve reliable, auditable decisions.',
       image: '/Pryima Intelligence-1.png',
       pages: [
         '/Pryima Intelligence-1.png',
@@ -38,7 +38,7 @@ const Research: React.FC = () => {
       id: 2,
       title: 'Pryima Intelligence II',
       type: 'research-paper',
-      description: 'Advanced 6-page research paper on Pryima Intelligence II, delving deeper into cutting-edge AI applications, health data integration, and innovative bioinformatics solutions.',
+      description: 'Executive-focused research paper articulating the latter discussion Pryima\'s AGI blueprint for clinically reliable general intelligence—defining AGI operationally and detailing a post-Transformer architecture that combines risk-aware routing (fast vs. deliberate), world-model-in-the-loop planning, neuro-symbolic verification with a typed DSL, and conformal abstention. It maps provenance-first governance (PCCP/NIST/EU AI Act) and EHR-native deployment (SMART on FHIR/CDS Hooks) to auditable, human-in-the-loop decisions and safe, continuous adaptation in healthcare.',
       image: '/research%20papers/Pryima%20Intelligence%20II/Pryima%20Intelligence%20II%20(no%20diagram)-1.png',
       pages: [
         '/research%20papers/Pryima%20Intelligence%20II/Pryima%20Intelligence%20II%20(no%20diagram)-1.png',
