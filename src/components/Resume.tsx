@@ -156,8 +156,9 @@ const Resume: React.FC = () => {
                 alt="Bank of America"
                 className="h-10 w-auto object-contain"
                 onError={(e) => {
+                  console.error('Bank of America logo failed to load:', e);
                   const target = e.target as HTMLImageElement;
-                  target.style.display = 'none';
+                  target.src = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjQwIiB2aWV3Qm94PSIwIDAgMTAwIDQwIiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxyZWN0IHdpZHRoPSIxMDAiIGhlaWdodD0iNDAiIGZpbGw9IiNmZmYiLz48dGV4dCB4PSI1MCIgeT0iMjUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMiIgZmlsbD0iIzAwMCIgdGV4dC1hbmNob3I9Im1pZGRsZSI+QmFuayBvZiBBbWVyaWNhPC90ZXh0Pjwvc3ZnPg==';
                 }}
               />
             </div>
@@ -167,8 +168,9 @@ const Resume: React.FC = () => {
                 alt="Blackstone"
                 className="h-10 w-auto object-contain"
                 onError={(e) => {
+                  console.error('Blackstone logo failed to load:', e);
                   const target = e.target as HTMLImageElement;
-                  target.style.display = 'none';
+                  target.src = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjQwIiB2aWV3Qm94PSIwIDAgMTAwIDQwIiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxyZWN0IHdpZHRoPSIxMDAiIGhlaWdodD0iNDAiIGZpbGw9IiNmZmYiLz48dGV4dCB4PSI1MCIgeT0iMjUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMiIgZmlsbD0iIzAwMCIgdGV4dC1hbmNob3I9Im1pZGRsZSI+QmxhY2tzdG9uZTwvdGV4dD48L3N2Zz4=';
                 }}
               />
             </div>
@@ -178,8 +180,9 @@ const Resume: React.FC = () => {
                 alt="Goldman Sachs"
                 className="h-10 w-auto object-contain"
                 onError={(e) => {
+                  console.error('Goldman Sachs logo failed to load:', e);
                   const target = e.target as HTMLImageElement;
-                  target.style.display = 'none';
+                  target.src = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjQwIiB2aWV3Qm94PSIwIDAgMTAwIDQwIiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxyZWN0IHdpZHRoPSIxMDAiIGhlaWdodD0iNDAiIGZpbGw9IiNmZmYiLz48dGV4dCB4PSI1MCIgeT0iMjUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMiIgZmlsbD0iIzAwMCIgdGV4dC1hbmNob3I9Im1pZGRsZSI+R29sZG1hbiBTYWNocyA8L3RleHQ+PC9zdmc+';
                 }}
               />
             </div>
