@@ -11,6 +11,7 @@ interface ResearchDocument {
   image: string;
   pages: string[];
   downloadUrl: string;
+  isComingSoon?: boolean;
 }
 
 const Research: React.FC = () => {
@@ -49,6 +50,18 @@ const Research: React.FC = () => {
         '/research%20papers/Pryima%20Intelligence%20II/Pryima%20Intelligence%20II%20(no%20diagram)-6.png'
       ],
       downloadUrl: '/research%20papers/Pryima%20Intelligence%20II/Pryima%20Intelligence%20II.pdf'
+    },
+    {
+      id: 3,
+      title: 'MCP for Pryima: A Governance-Ready Protocol for Safe, Auditable Tool Use in Precision Health',
+      type: 'research-paper',
+      description: 'Coming Soon - Advanced research paper on Model Context Protocol (MCP) implementation for Pryima, focusing on governance-ready protocols for safe and auditable tool use in precision health applications.',
+      image: '/research%20papers/Pryima%20MCP%20Teaser/Pryima%20MCP%20Teaser.pdf',
+      pages: [
+        '/research%20papers/Pryima%20MCP%20Teaser/Pryima%20MCP%20Teaser.pdf'
+      ],
+      downloadUrl: '/research%20papers/Pryima%20MCP%20Teaser/Pryima%20MCP%20Teaser.pdf',
+      isComingSoon: true
     }
   ];
 
@@ -84,7 +97,7 @@ const Research: React.FC = () => {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
           {researchDocuments.map((doc, index) => (
             <motion.div
               key={doc.id}
@@ -95,9 +108,9 @@ const Research: React.FC = () => {
               className="relative"
             >
               <motion.div
-                whileHover={{ scale: 1.02, y: -5 }}
-                className="glass p-6 rounded-2xl cursor-pointer group"
-                onClick={() => handleDocumentClick(doc.id)}
+                whileHover={{ scale: doc.isComingSoon ? 1 : 1.02, y: doc.isComingSoon ? 0 : -5 }}
+                className={`glass p-6 rounded-2xl ${doc.isComingSoon ? 'cursor-default' : 'cursor-pointer group'}`}
+                onClick={() => !doc.isComingSoon && handleDocumentClick(doc.id)}
               >
                 {/* Document Preview */}
                 <div className="relative mb-6 overflow-hidden rounded-xl">
@@ -111,13 +124,29 @@ const Research: React.FC = () => {
                     }}
                   />
                   
-                  {/* Overlay */}
-                  <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                    <div className="text-center">
-                      <Maximize2 size={48} className="text-white mx-auto mb-2" />
-                      <p className="text-white font-semibold">Click to Expand</p>
+                  {/* Coming Soon Overlay */}
+                  {doc.isComingSoon && (
+                    <div className="absolute inset-0 bg-black/70 flex items-center justify-center">
+                      <div className="text-center">
+                        <div className="bg-gradient-to-r from-primary-500 to-primary-700 px-6 py-3 rounded-lg mb-4 transform -rotate-2">
+                          <p className="text-white font-bold text-lg">COMING SOON</p>
+                        </div>
+                        <div className="bg-white/20 backdrop-blur-sm px-4 py-2 rounded-lg">
+                          <p className="text-white text-sm font-medium">Research in Progress</p>
+                        </div>
+                      </div>
                     </div>
-                  </div>
+                  )}
+                  
+                  {/* Regular Overlay */}
+                  {!doc.isComingSoon && (
+                    <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                      <div className="text-center">
+                        <Maximize2 size={48} className="text-white mx-auto mb-2" />
+                        <p className="text-white font-semibold">Click to Expand</p>
+                      </div>
+                    </div>
+                  )}
                 </div>
 
                 {/* Document Info */}
@@ -136,18 +165,25 @@ const Research: React.FC = () => {
                   </p>
 
                   {/* Download Button */}
-                  <motion.button
-                    onClick={(e) => {
-                      e.stopPropagation();
-                      handleDownload(doc.downloadUrl, doc.title);
-                    }}
-                    whileHover={{ scale: 1.05 }}
-                    whileTap={{ scale: 0.95 }}
-                    className="inline-flex items-center space-x-2 px-6 py-3 bg-gradient-to-r from-primary-500 to-primary-700 rounded-lg font-semibold text-white hover:from-primary-600 hover:to-primary-800 transition-all duration-300"
-                  >
-                    <Download size={20} />
-                    <span>Download Paper</span>
-                  </motion.button>
+                  {doc.isComingSoon ? (
+                    <div className="inline-flex items-center space-x-2 px-6 py-3 bg-gray-600 rounded-lg font-semibold text-white cursor-not-allowed opacity-60">
+                      <Download size={20} />
+                      <span>Coming Soon</span>
+                    </div>
+                  ) : (
+                    <motion.button
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        handleDownload(doc.downloadUrl, doc.title);
+                      }}
+                      whileHover={{ scale: 1.05 }}
+                      whileTap={{ scale: 0.95 }}
+                      className="inline-flex items-center space-x-2 px-6 py-3 bg-gradient-to-r from-primary-500 to-primary-700 rounded-lg font-semibold text-white hover:from-primary-600 hover:to-primary-800 transition-all duration-300"
+                    >
+                      <Download size={20} />
+                      <span>Download Paper</span>
+                    </motion.button>
+                  )}
                 </div>
               </motion.div>
             </motion.div>
