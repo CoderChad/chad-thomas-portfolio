@@ -56,7 +56,7 @@ const Research: React.FC = () => {
       title: 'MCP for Pryima: A Governance-Ready Protocol for Safe, Auditable Tool Use in Precision Health',
       type: 'research-paper',
       description: 'Coming Soon - Advanced research paper on Model Context Protocol (MCP) implementation for Pryima, focusing on governance-ready protocols for safe and auditable tool use in precision health applications.',
-      image: '/research%20papers/Pryima%20MCP%20Teaser/Pryima%20MCP%20Teaser.pdf',
+      image: '/research%20papers/Pryima%20MCP%20Teaser/Pryima%20MCP%20Teaser-1.png',
       pages: [
         '/research%20papers/Pryima%20MCP%20Teaser/Pryima%20MCP%20Teaser.pdf'
       ],
