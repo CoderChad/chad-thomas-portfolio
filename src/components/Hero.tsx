@@ -247,9 +247,19 @@ const Hero: React.FC = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
-          className="text-xl md:text-2xl text-gray-300 mb-8 font-medium"
+          className="text-xl md:text-2xl text-gray-300 mb-4 font-medium"
         >
           Founder & CEO of Pryima • AI/ML Engineer • Data Scientist & Practitioner
+        </motion.p>
+
+        {/* Location */}
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.5 }}
+          className="text-lg text-gray-400 mb-8 font-medium"
+        >
+          Available for remote work worldwide → Austin, TX
         </motion.p>
 
         {/* Description */}
