@@ -1,6 +1,5 @@
 // src/components/AboutBio.tsx
 import React from 'react';
-import Badge from './Badge';
 
 const AboutBio: React.FC = () => {
   return (

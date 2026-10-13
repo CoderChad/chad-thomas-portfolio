@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Clipboard, Database, Cpu, Bot, ArrowRight, RefreshCw } from 'lucide-react';
+import { Clipboard, Database, Cpu, Bot, RefreshCw } from 'lucide-react';
 
 const Approach: React.FC = () => {
   const stages = [

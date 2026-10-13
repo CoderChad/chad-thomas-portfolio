@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { FileText, Download, X, Maximize2, Minimize2 } from 'lucide-react';
+import { FileText, Download, X, Maximize2 } from 'lucide-react';
 
 interface Document {
   id: number;
