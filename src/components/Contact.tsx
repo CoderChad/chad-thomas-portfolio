@@ -19,9 +19,9 @@ const Contact: React.FC = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission here
-    console.log('Form submitted:', formData);
-    // Reset form
+    const subject = encodeURIComponent(`Website message from ${formData.name}`);
+    const body = encodeURIComponent(`${formData.message}\n\nFrom: ${formData.name} <${formData.email}>`);
+    window.location.href = `mailto:appsforchad@gmail.com?subject=${subject}&body=${body}`;
     setFormData({ name: '', email: '', message: '' });
   };
 
@@ -220,7 +220,7 @@ const Contact: React.FC = () => {
 
                 {/* Form Note */}
                 <p className="text-sm text-gray-400 mt-4 text-center">
-                  I'll get back to you as soon as possible. Usually within 24 hours.
+                  Sending opens a pre-filled email in your mail app. I usually reply within 24 hours.
                 </p>
               </div>
             </motion.div>
@@ -236,7 +236,7 @@ const Contact: React.FC = () => {
           className="text-center mt-16 pt-8 border-t border-gray-700/50"
         >
           <p className="text-gray-400">
-            © 2025 Chad Thomas. All rights reserved.
+            © {new Date().getFullYear()} Chad Thomas. All rights reserved.
           </p>
           <p className="text-sm text-gray-500 mt-2">
             Built with React, TypeScript, and Tailwind CSS

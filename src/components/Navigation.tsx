@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Menu, X, Sun, Moon, Accessibility } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 
 const Navigation: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isDarkMode, setIsDarkMode] = useState(true);
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
@@ -21,13 +20,8 @@ const Navigation: React.FC = () => {
     { name: 'About', href: '#about' },
     { name: 'Resume', href: '#resume' },
     { name: 'Research', href: '#research' },
-    { name: 'Quarterly Blogs', href: '#insights' },
+    { name: 'Insights', href: '#insights' },
   ];
-
-  const toggleTheme = () => {
-    setIsDarkMode(!isDarkMode);
-    // Theme toggle logic would go here
-  };
 
   const scrollToSection = (href: string) => {
     const element = document.querySelector(href);
@@ -80,29 +74,6 @@ const Navigation: React.FC = () => {
 
           {/* Action Buttons */}
           <div className="flex items-center space-x-4">
-            {/* Theme Toggle */}
-            <motion.button
-              onClick={toggleTheme}
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.9 }}
-              className="p-2 glass rounded-lg hover:bg-primary-500/20 transition-all duration-300"
-            >
-              {isDarkMode ? (
-                <Sun size={20} className="text-white" />
-              ) : (
-                <Moon size={20} className="text-white" />
-              )}
-            </motion.button>
-
-            {/* Accessibility Toggle */}
-            <motion.button
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.9 }}
-              className="p-2 glass rounded-lg hover:bg-primary-500/20 transition-all duration-300"
-            >
-              <Accessibility size={20} className="text-white" />
-            </motion.button>
-
             {/* Mobile Menu Button */}
             <motion.button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -145,26 +116,6 @@ const Navigation: React.FC = () => {
                   </motion.button>
                 ))}
                 
-                {/* Mobile Theme Toggle */}
-                <motion.button
-                  initial={{ opacity: 0, x: -20 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 0.3, delay: 0.4 }}
-                  onClick={toggleTheme}
-                  className="flex items-center space-x-3 text-gray-300 hover:text-white transition-colors duration-300 font-medium py-2"
-                >
-                  {isDarkMode ? (
-                    <>
-                      <Sun size={20} />
-                      <span>Light Mode</span>
-                    </>
-                  ) : (
-                    <>
-                      <Moon size={20} />
-                      <span>Dark Mode</span>
-                    </>
-                  )}
-                </motion.button>
               </div>
             </div>
           </motion.div>

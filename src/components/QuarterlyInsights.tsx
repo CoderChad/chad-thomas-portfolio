@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Calendar, ArrowRight, TrendingUp, Brain, Zap } from 'lucide-react';
+import { Calendar, TrendingUp, Brain, Zap } from 'lucide-react';
 
 interface Insight {
   id: number;
@@ -8,7 +8,6 @@ interface Insight {
   date: string;
   quarter: string;
   preview: string;
-  readTime: string;
   category: string;
   icon: React.ComponentType<any>;
   color: string;
@@ -22,7 +21,6 @@ const QuarterlyInsights: React.FC = () => {
       date: 'March 31, 2024',
       quarter: 'Q1 2024',
       preview: 'Exploring how multimodal AI systems are revolutionizing the way machines understand and process information across different data types, from text and images to audio and video.',
-      readTime: '8 min read',
       category: 'AI Research',
       icon: Brain,
       color: 'from-purple-500 to-pink-500'
@@ -33,7 +31,6 @@ const QuarterlyInsights: React.FC = () => {
       date: 'December 31, 2023',
       quarter: 'Q4 2023',
       preview: 'A comprehensive analysis of how LLMs have evolved from simple text generators to sophisticated reasoning systems capable of complex problem-solving and creative tasks.',
-      readTime: '12 min read',
       category: 'NLP',
       icon: TrendingUp,
       color: 'from-blue-500 to-cyan-500'
@@ -44,7 +41,6 @@ const QuarterlyInsights: React.FC = () => {
       date: 'September 30, 2023',
       quarter: 'Q3 2023',
       preview: 'Deep dive into modern MLOps practices, tools, and strategies for deploying machine learning models at scale with reliability and efficiency.',
-      readTime: '10 min read',
       category: 'MLOps',
       icon: Zap,
       color: 'from-green-500 to-emerald-500'
@@ -55,7 +51,6 @@ const QuarterlyInsights: React.FC = () => {
       date: 'June 30, 2023',
       quarter: 'Q2 2023',
       preview: 'Examining the latest breakthroughs in computer vision, from transformer-based architectures to real-time object detection and scene understanding.',
-      readTime: '9 min read',
       category: 'Computer Vision',
       icon: Brain,
       color: 'from-orange-500 to-red-500'
@@ -91,7 +86,7 @@ const QuarterlyInsights: React.FC = () => {
             Quarterly Insights
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            In-depth analysis and commentary on the latest trends and developments in AI and machine learning
+            Short takes on the trends shaping AI and machine learning
           </p>
         </motion.div>
 
@@ -107,7 +102,7 @@ const QuarterlyInsights: React.FC = () => {
               key={insight.id}
               variants={itemVariants}
               whileHover={{ y: -10, scale: 1.02 }}
-              className="glass p-8 rounded-2xl cursor-pointer group"
+              className="glass p-8 rounded-2xl group"
             >
               {/* Header */}
               <div className="flex items-start justify-between mb-6">
@@ -136,30 +131,9 @@ const QuarterlyInsights: React.FC = () => {
                 {insight.title}
               </h3>
               
-              <p className="text-gray-300 mb-6 leading-relaxed line-clamp-3">
+              <p className="text-gray-300 leading-relaxed">
                 {insight.preview}
               </p>
-
-              {/* Footer */}
-              <div className="flex items-center justify-between">
-                <div className="flex items-center space-x-4">
-                  <span className="text-sm text-gray-400">
-                    {insight.readTime}
-                  </span>
-                  <div className="flex items-center space-x-1">
-                    <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
-                    <span className="text-xs text-green-400">Published</span>
-                  </div>
-                </div>
-                
-                <motion.div
-                  whileHover={{ x: 5 }}
-                  className="flex items-center space-x-2 text-primary-400 group-hover:text-primary-300 transition-colors duration-300"
-                >
-                  <span className="text-sm font-medium">Read More</span>
-                  <ArrowRight size={16} />
-                </motion.div>
-              </div>
 
               {/* Hover Effect Overlay */}
               <div className="absolute inset-0 bg-gradient-to-br from-primary-500/5 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
@@ -167,55 +141,6 @@ const QuarterlyInsights: React.FC = () => {
           ))}
         </motion.div>
 
-        {/* View All Insights */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.5 }}
-          viewport={{ once: true }}
-          className="text-center mt-12"
-        >
-          <motion.button
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            className="px-8 py-4 glass rounded-xl font-semibold text-white hover:bg-primary-500/20 hover:border-primary-400 transition-all duration-300"
-          >
-            View All Insights
-          </motion.button>
-        </motion.div>
-
-        {/* Newsletter Signup */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.7 }}
-          viewport={{ once: true }}
-          className="mt-16 max-w-2xl mx-auto"
-        >
-          <div className="glass p-8 rounded-2xl text-center">
-            <h3 className="text-2xl font-bold text-white mb-4">
-              Stay Updated
-            </h3>
-            <p className="text-gray-300 mb-6">
-              Subscribe to receive quarterly insights and the latest AI developments directly in your inbox.
-            </p>
-            
-            <div className="flex flex-col sm:flex-row gap-4">
-              <input
-                type="email"
-                placeholder="Enter your email address"
-                className="flex-1 px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-primary-400 focus:bg-white/20 transition-all duration-300"
-              />
-              <motion.button
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="px-6 py-3 bg-gradient-to-r from-primary-500 to-primary-700 rounded-lg font-semibold text-white hover:from-primary-600 hover:to-primary-800 transition-all duration-300"
-              >
-                Subscribe
-              </motion.button>
-            </div>
-          </div>
-        </motion.div>
       </div>
     </section>
   );

@@ -286,25 +286,6 @@ const Hero: React.FC = () => {
           </div>
         </motion.div>
 
-        {/* Navigation Buttons */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 1 }}
-          className="flex flex-wrap justify-center gap-4 mb-12"
-        >
-          {['Main', 'Quarterly Blogs', 'Toggle Theme'].map((button, index) => (
-            <motion.button
-              key={button}
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="px-6 py-3 glass rounded-lg font-semibold text-white hover:bg-primary-500/20 hover:border-primary-400 transition-all duration-300"
-            >
-              {button}
-            </motion.button>
-          ))}
-        </motion.div>
-
         {/* Social Links */}
         <motion.div
           initial={{ opacity: 0 }}
