@@ -55,13 +55,14 @@ const Research: React.FC = () => {
       id: 3,
       title: 'MCP for Pryima: A Governance-Ready Protocol for Safe, Auditable Tool Use in Precision Health',
       type: 'research-paper',
-      description: 'Coming Soon - Advanced research paper on Model Context Protocol (MCP) implementation for Pryima, focusing on governance-ready protocols for safe and auditable tool use in precision health applications.',
+      description: 'Design paper (September 2025) on adopting the Model Context Protocol as the governance layer for tool use in precision health. It separates what a model can do (capability-scoped tool servers), may do (a policy and verification layer with human-in-the-loop stops), and did (signed, tamper-evident provenance), and lays out Pryima\'s MCP topology: zero-trust tool servers for clinical data, biometrics, bioinformatics, cohort analytics and communications, plus tiered memory and an audit bus.',
       image: '/research%20papers/Pryima%20MCP%20Teaser/Pryima%20MCP%20Teaser-1.png',
       pages: [
-        '/research%20papers/Pryima%20MCP%20Teaser/Pryima%20MCP%20Teaser.pdf'
+        '/research%20papers/Pryima%20MCP%20Teaser/Pryima%20MCP%20Teaser-1.png',
+        '/research%20papers/Pryima%20MCP%20Teaser/Pryima%20MCP%20Teaser-2.png',
+        '/research%20papers/Pryima%20MCP%20Teaser/Pryima%20MCP%20Teaser-3.png'
       ],
-      downloadUrl: '/research%20papers/Pryima%20MCP%20Teaser/Pryima%20MCP%20Teaser.pdf',
-      isComingSoon: true
+      downloadUrl: '/research%20papers/Pryima%20MCP%20Teaser/Pryima%20MCP%20Teaser.pdf'
     }
   ];
 
@@ -73,7 +74,7 @@ const Research: React.FC = () => {
     // Create a temporary link element to trigger download
     const link = document.createElement('a');
     link.href = downloadUrl;
-    link.download = `${title.toLowerCase().replace(' ', '-')}.pdf`;
+    link.download = `${title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '')}.pdf`;
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);

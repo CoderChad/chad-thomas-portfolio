@@ -21,7 +21,6 @@ const Navigation: React.FC = () => {
     { name: 'About', href: '#about' },
     { name: 'Resume', href: '#resume' },
     { name: 'Research', href: '#research' },
-    { name: 'AI News', href: '#news' },
     { name: 'Quarterly Blogs', href: '#insights' },
   ];
 

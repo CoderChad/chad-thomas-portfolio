@@ -94,7 +94,6 @@ Value: 185.199.111.153
 - [ ] Test www.chadthomas.us redirects properly
 - [ ] Verify SSL certificate is active (https://)
 - [ ] Test all navigation links work
-- [ ] Test news ticker functionality
 - [ ] Test responsive design on mobile
 - [ ] Check page load speed
 - [ ] Verify all images load correctly

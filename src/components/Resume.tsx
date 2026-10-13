@@ -138,41 +138,6 @@ const Resume: React.FC = () => {
           ))}
         </div>
 
-        {/* Company Logos Section */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.4 }}
-          viewport={{ once: true }}
-          className="mt-16 text-center"
-        >
-          <h3 className="text-2xl font-semibold text-gray-300 mb-8">
-            Trusted by Leading Organizations
-          </h3>
-          <div className="flex flex-wrap justify-center items-center gap-8">
-            <img
-              src="/Company Logos/Bank-of-America-Logo.png"
-              alt="Bank of America"
-              className="h-16 w-auto"
-            />
-            <img
-              src="/Company Logos/Blackstone-Logo.png"
-              alt="Blackstone"
-              className="h-16 w-auto"
-            />
-            <img
-              src="/Company Logos/Chase.png"
-              alt="Chase"
-              className="h-16 w-auto"
-            />
-            <img
-              src="/Company Logos/Font-Goldman-Sachs-Logo.jpg"
-              alt="Goldman Sachs"
-              className="h-16 w-auto"
-            />
-          </div>
-        </motion.div>
-
         {/* Expanded Document Modal */}
         <AnimatePresence>
           {expandedDoc && (

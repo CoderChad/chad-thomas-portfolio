@@ -12,7 +12,6 @@ interface SkillCategory {
 interface Skill {
   name: string;
   icon: string;
-  level: number;
   description: string;
 }
 
@@ -26,25 +25,21 @@ const Skills: React.FC = () => {
         {
           name: 'Azure',
           icon: '/skills/azure-icon-svgrepo-com.svg',
-          level: 95,
           description: 'Cloud computing platform with expertise in ML services, data lakes, and container orchestration'
         },
         {
           name: 'AWS',
           icon: '/icons/aws.svg',
-          level: 90,
           description: 'Amazon Web Services including SageMaker, Lambda, and EC2 for scalable ML deployments'
         },
         {
           name: 'Docker',
           icon: '/icons/docker.svg',
-          level: 88,
           description: 'Containerization and orchestration for consistent ML model deployment across environments'
         },
         {
           name: 'Kubernetes',
           icon: '/icons/docker.svg',
-          level: 85,
           description: 'Container orchestration for managing ML workloads at scale with auto-scaling capabilities'
         }
       ]
@@ -57,37 +52,31 @@ const Skills: React.FC = () => {
         {
           name: 'PyTorch',
           icon: '/icons/pytorch.svg',
-          level: 95,
           description: 'Deep learning framework for research and production with custom model architectures'
         },
         {
           name: 'TensorFlow',
           icon: '/icons/tensorflow.svg',
-          level: 92,
           description: 'End-to-end ML platform with TensorFlow Extended (TFX) for production pipelines'
         },
         {
           name: 'ONNX',
           icon: '/icons/onnxai-ar21.svg',
-          level: 88,
           description: 'Open Neural Network Exchange for model interoperability and optimization'
         },
         {
           name: 'Scikit-learn',
           icon: '/icons/scikit-learn.svg',
-          level: 95,
           description: 'Machine learning library for traditional algorithms and model evaluation'
         },
         {
           name: 'Keras',
           icon: '/icons/keras.svg',
-          level: 90,
           description: 'High-level neural networks API for rapid prototyping and experimentation'
         },
         {
           name: 'NumPy',
           icon: '/icons/numpy.svg',
-          level: 98,
           description: 'Fundamental package for scientific computing with Python'
         }
       ]
@@ -100,43 +89,36 @@ const Skills: React.FC = () => {
         {
           name: 'Apache Spark',
           icon: '/icons/apache-spark-svgrepo-com.svg',
-          level: 90,
           description: 'Big data processing engine for large-scale data transformation and ML pipelines'
         },
         {
           name: 'Apache Kafka',
           icon: '/icons/apachekafka-svgrepo-com.svg',
-          level: 85,
           description: 'Real-time data streaming platform for event-driven ML applications'
         },
         {
           name: 'Pandas',
           icon: '/icons/pandas.svg',
-          level: 98,
           description: 'Data manipulation and analysis library for structured data processing'
         },
         {
           name: 'SQL',
           icon: '/icons/sql.svg',
-          level: 92,
           description: 'Database querying and optimization for data extraction and transformation'
         },
         {
           name: 'MongoDB',
           icon: '/icons/mongodb.svg',
-          level: 85,
           description: 'NoSQL database for flexible document storage and real-time analytics'
         },
         {
           name: 'OpenCV',
           icon: '/icons/opencv.svg',
-          level: 88,
           description: 'Computer vision library for image processing and machine learning applications'
         },
         {
           name: 'NLP',
           icon: '/icons/nlp.svg',
-          level: 90,
           description: 'Natural Language Processing for text analysis and language understanding'
         }
       ]
@@ -149,37 +131,31 @@ const Skills: React.FC = () => {
         {
           name: 'MLflow',
           icon: '/icons/python.svg',
-          level: 90,
           description: 'ML lifecycle management including experiment tracking and model registry'
         },
         {
           name: 'Kubeflow',
           icon: '/icons/docker.svg',
-          level: 85,
           description: 'Kubernetes-native ML workflow orchestration and pipeline management'
         },
         {
           name: 'Airflow',
           icon: '/icons/apache-airflow-svgrepo-com.svg',
-          level: 88,
           description: 'Workflow orchestration for complex ML data pipelines and scheduling'
         },
         {
           name: 'Prometheus',
           icon: '/icons/prometheus-svgrepo-com.svg',
-          level: 82,
           description: 'Monitoring and alerting for ML model performance and system metrics'
         },
         {
           name: 'Git',
           icon: '/icons/git.svg',
-          level: 95,
           description: 'Version control and collaboration for ML model development and deployment'
         },
         {
           name: 'JavaScript',
           icon: '/icons/javascript.svg',
-          level: 85,
           description: 'Web development for ML model deployment and interactive dashboards'
         }
       ]
@@ -192,19 +168,16 @@ const Skills: React.FC = () => {
         {
           name: 'Time Series Analysis',
           icon: '/icons/time-series.svg',
-          level: 92,
           description: 'Advanced forecasting and anomaly detection in temporal data'
         },
         {
           name: 'Computer Vision',
           icon: '/icons/opencv.svg',
-          level: 88,
           description: 'Image recognition, object detection, and visual pattern analysis'
         },
         {
           name: 'Natural Language Processing',
           icon: '/icons/nlp.svg',
-          level: 90,
           description: 'Text mining, sentiment analysis, and language model development'
         }
       ]
@@ -302,21 +275,6 @@ const Skills: React.FC = () => {
                             </h4>
                           </div>
                           
-                          <div className="mb-2">
-                            <div className="flex justify-between text-xs text-gray-300 mb-1">
-                              <span>Proficiency</span>
-                              <span>{skill.level}%</span>
-                            </div>
-                            <div className="w-full bg-gray-700 rounded-full h-1.5">
-                              <motion.div
-                                initial={{ width: 0 }}
-                                whileInView={{ width: `${skill.level}%` }}
-                                transition={{ duration: 1, delay: 0.5 + skillIndex * 0.1 }}
-                                viewport={{ once: true }}
-                                className={`h-1.5 rounded-full bg-gradient-to-r ${category.color}`}
-                              />
-                            </div>
-                          </div>
                         </div>
                         
                         <div className="text-xs text-gray-400 text-center">

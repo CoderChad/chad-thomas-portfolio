@@ -293,7 +293,7 @@ const Hero: React.FC = () => {
           transition={{ duration: 0.8, delay: 1 }}
           className="flex flex-wrap justify-center gap-4 mb-12"
         >
-          {['Main', 'AI News', 'Quarterly Blogs', 'Toggle Theme'].map((button, index) => (
+          {['Main', 'Quarterly Blogs', 'Toggle Theme'].map((button, index) => (
             <motion.button
               key={button}
               whileHover={{ scale: 1.05 }}
